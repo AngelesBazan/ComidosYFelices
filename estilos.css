@@ -1,0 +1,108 @@
+html{
+    font-size: 62.5%;
+    background-color: rgb(245, 189, 198);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(20, 20, 20);
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+nav{
+    display: block;
+    background-color: rgb(89, 212, 142);
+    height: 6rem;
+}
+
+img{
+    display: flex;
+    border-radius: 50%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+ul li{
+    margin: .5em;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    color: black;
+}
+
+div {
+    margin: 0.5rem;
+}
+
+.container{
+    display: grid;
+    padding: 2rem;
+    height: 30rem;
+    grid-template-areas: "uno dos tres cuatro";            
+    grid-gap: 3rem;
+}
+
+section{
+    border-radius: 20%;
+    box-shadow:  10px 10px 21px #aaaaaa,
+                -10px -10px 21px #ffffff;
+}
+
+.box1{
+    background-color: #fddf7e81;
+    grid-area: uno;
+}
+
+.box2{
+    background-color:#faa99081;
+    grid-area: dos;
+    
+}
+
+.box3{
+    background-color: #f6a5eb8c;
+    grid-area: tres;
+    
+}
+
+.box4{
+    background-color: #ce97fb93;
+    grid-area: cuatro;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        grid-template-areas: "uno dos"
+                             "tres cuatro";
+    }
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        grid-template-areas: "uno"
+                             "dos"
+                             "tres"
+                             "cuatro";
+    }
+}
+
+.footer{
+    display: block;
+    background-color: rgb(89, 212, 142);
+    height: 6rem;
+}
