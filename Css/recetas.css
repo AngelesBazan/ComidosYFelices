@@ -1,0 +1,47 @@
+.grid-container-receta{
+    height: 100%;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /*se auto ajusta y mide mínimo 360px y máximo el espacio disponible*/
+    grid-gap: 2rem;
+}
+
+.grid-item-receta{
+    font-size: 2rem;
+    background-color: rgb(255, 228, 181);
+    align-items: center;
+    text-align: right;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 150px 1fr; /*para que el texto se ponga al lado de la imagen*/
+}
+
+.grid-item-receta:hover{
+    background-color: rgb(196, 224, 222);
+}
+
+img{
+    height: 100%; /*la imagen ocupa el 100% del div*/
+    width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+    img{
+        height: 30vh;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 426px){ /* Vista para celulares*/
+    #titulo-secundario{
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+    .grid-container-receta{
+        margin: 0;
+    }
+    .grid-item-receta{
+        width: 100vw;
+        height: 40vh;
+    }
+}

@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/Css/estilos.css">
+    <link rel="stylesheet" href="/Css/main.css">
+    <link rel="stylesheet" href="/Css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/Img/anana2.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -19,22 +21,68 @@
                 <li> <a href="/faq.html">Preguntas frecuentes</a></li>
                 <li> <a href="/contact.html">Contáctanos</a></li>
             </ul>
+            <ul>
+                <li> <a href="/sesion.html">Mi perfil</a></li>
+            </ul>
         </nav>
-
-        <h1 class="animate__animated animate__bounce">Escribinos</h1>
+        <div class="titulo">
+            <h1 id="titulo-secundario">Escribinos tus dudas y comentarios</h1>
+        </div>
     </header>
 
-    <footer class="footer"><ul>
-        <li>
-            <a href="http://instagram.com" class="fab fa-instagram-square"></a>
-        </li>
-        <li>
-            <a href="http://web.whatsapp.com" class="fab fa-whatsapp-square"></a>
-        </li>
-        <li>
-            <a href="http://gmail.com" class="fas fa-envelope"></a>
-        </li>
-    </ul></footer>
+    <main>
+            <div class="formulario">
+                <form action="https://formspree.io/f/xzbyeyrv" method="post" target="_blank">
+                    <label>
+                        <h6>Nombre</h6> 
+                        <input class="opcion" name="nombre" type="text" required placeholder="¿Cómo deseas que te nombremos?">
+                        <br><br>
+                        <h6>Email</h6>
+                        <input class="opcion" type="email" required placeholder="Para que podamos responderte">
+                        <br><br>
+                    </label>
+                    <label>
+                        <h6>Asunto</h6>
+                        <select class="opcion" name="selector">
+                            <option placeholder="Consulta">Quiero preguntar algo</option>
+                            <option placeholder="Opinión">Quiero dar mi opinión</option>
+                            <option placeholder="Otro">Otra opción</option>
+                        </select>
+                    </label>
+                        <br><br>
+                    <label>
+                        <h6>Mensaje</h6>
+                        <textarea name="Comentarios" cols="30" rows="10" required></textarea>
+                    </label>
+                    <br>
+                    <button type="reset">BORRAR</button>
+                    <button type="submit">ENVIAR</button>
+                    <br><br>
+                    <h6>Recordá que también podés contactarte a través de nuestras redes sociales
+                        que se encuentran debajo  <i class="fas fa-arrow-alt-circle-down"></i>
+                    </h6>
+                    <img src="/Img/undraw_Social_media_re_w12q.png" alt="imagen">
+                </form>
+            </div>
+    </main>
 
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="http://instagram.com" target="_blank" class="fab fa-instagram-square"></a>
+            </li>
+            <li>
+                <a href="http://web.whatsapp.com" target="_blank" class="fab fa-whatsapp-square"></a>
+            </li>
+            <li>
+                <a href="http://gmail.com" target="_blank" class="fas fa-envelope"></a>
+            </li>
+            <li>
+                <i><a href="https://github.com/AngelesBazan" target="_blank">&copy; Dev. By Angeles Bazan - 2021</a></i>
+            </li>
+        </ul>
+    </footer>
+
+    
 </body>
 </html>
